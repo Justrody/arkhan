@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+    --font-brand: 30rem ;
+    --font-extra-large: 10rem;
+    --font-large: 8rem;
+    --font-medium-large: 5.6rem;
+    --font-medium: 2rem;
+    --font-default: 1.2rem;
+    --font-small: 1rem;
+    --font-extra-small: .8rem;
+}
+
+@media screen and (max-width: 968px) {
+    :root {
+        --font-brand: 12rem;
+        --font-extra-large: 10rem;
+        --font-large: 8rem;
+        --font-medium-large: 4rem;
+        --font-medium: 2rem;
+        --font-default: 1.2rem;
+        --font-small: 1rem;
+        --font-extra-small: .8rem;
+    } 
+}
+.no-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;   
+  user-select: none;         
+}

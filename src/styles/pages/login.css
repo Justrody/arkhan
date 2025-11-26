@@ -1,0 +1,106 @@
+@import url('../global.css');
+@import url('../components/nav.css');
+@import url('../themes/void.css');
+@import url('../animations/landing.css');
+@import url('../components/glassmorphism.css');
+@import url('mobile/login.css');
+
+body {
+  background-color: var(--background-main);
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: repeating-linear-gradient(
+      to bottom,
+      rgba(131, 92, 92, 0.062) 0px,  
+      rgba(255, 255, 255, 0.04) 1px,   
+      transparent 4px,                
+      transparent 7px
+  );
+
+  pointer-events: none;   
+  z-index: 9999;            
+  
+  animation: moving-up 22s linear infinite;
+}
+.section-70 {
+    width: 60%;
+}
+
+.overlay-flbars {
+  padding: 50px;
+  font-size: 26px;
+}
+
+.container-forms {
+    width: 40%;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--material-red);
+    h1 {
+        font-family: "Anton SC", sans-serif;
+        font-weight: bolder;
+        font-size: var(--font-medium-large);
+        color: var(--text-primary);
+    }
+    h2 {
+        font-size: var(--font-default);
+        color: var(--text-primary);
+        font-weight: bold;
+    }
+    p {
+        font-size: var(--font-default);
+        color: var(--text-primary);
+        font-weight: medium;
+    }
+    a {
+        font-size: var(--font-default);
+        color: var(--text-primary);
+        font-weight: medium; 
+        text-decoration: underline;
+    }
+    button {
+        font-weight: bolder;
+        padding: .5rem 2rem;
+        background-color: var(--material-white);
+        transition: .2s;
+    }
+    button:hover {
+        background-color: var(--material-red-2);
+    }
+    form {
+        input[type=text], input[type=email] {
+            font-weight: bolder;
+            color: var(--text-secondary);
+            padding: .5rem 1rem;
+            background-color: var(--material-red-2);
+            border: 1px solid var(--material-red-2);
+        }
+        input:focus {
+            border: 1px solid var(--accent-color);
+        }
+        input[type=checkbox] {
+            appearance: none;
+            padding: .5rem;
+            border: 5px solid var(--material-red);
+            background-color: var(--material-red-2);
+        }
+        input[type=checkbox]:checked {
+            background-color: var(--material-white);
+            border: 5px solid var(--material-red-2);
+        }
+    }
+}
+.smooth-fade {
+    animation: fadeout 2s ease;
+}

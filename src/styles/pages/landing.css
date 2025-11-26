@@ -1,0 +1,166 @@
+@import url('../global.css');
+@import url('../components/nav.css');
+@import url('../themes/void.css');
+@import url('../animations/landing.css');
+@import url('../components/glassmorphism.css');
+
+
+body {
+  background-color: var(--background-main);
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: repeating-linear-gradient(
+      to bottom,
+      rgba(131, 92, 92, 0.062) 0px,  
+      rgba(255, 255, 255, 0.04) 1px,   
+      transparent 4px,                
+      transparent 7px
+  );
+
+  pointer-events: none;   
+  z-index: 9999;            
+  
+  animation: moving-up 22s linear infinite;
+}
+
+.overlay-flbars {
+  padding: 50px;
+  font-size: 26px;
+}
+
+#introduction {
+    height: 60vh;
+        margin-bottom: 20rem;
+        font-family: "Anton SC", sans-serif;
+    h1 {
+        animation: pop-in 1s ease;
+        opacity: .8;
+        font-size: var(--font-medium-large);
+        font-weight: bolder;
+        color: var(--text-primary); 
+        line-height: 1;
+    }
+    span {
+        color: var(--material-red);
+    }
+    p {
+        font-size: var(--font-default);
+        font-weight: bolder;
+        color: var(--text-quaternary);      
+        margin-bottom: -8rem;
+    }
+}
+.void-transition {
+    animation: moving-down .5s ease;
+    border-bottom: 1px solid var(--material-red); 
+    line-height: 1;
+    margin-bottom: -24rem;
+    margin-top: -14rem;
+    color: var(--text-tertiary);
+    position: relative;
+    z-index: 15;
+    font-weight:800;
+    font-family: "Anton SC", sans-serif;
+    font-size: var(--font-brand);
+
+}
+
+#about {
+    position: relative;
+    z-index: 20;
+    background-color: var(--material-black);
+    div {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid var(--background-glass);
+    }
+}
+#featured {
+    background-color: var(--material-red);
+        position: relative;
+        z-index: 20;
+    .rolling-transition {
+        margin-top: 1.2rem;
+        background-color: var(--material-black);
+    }
+    .rolling {
+        font-size: var(--font-default);
+        color: var(--text-secondary);
+        margin-top: 1rem;
+        animation: rolling-left infinite 20s;
+        margin-bottom: 1rem;
+        margin-left: -100rem;
+    }
+    .rolling-right {
+        width: 2000px;
+        margin-top: 8rem;
+        animation: rolling-right infinite 20s;
+        margin-bottom: 2rem;
+    }
+    .rolling-left {
+        width: 2000px;
+        animation: rolling-left infinite 20s;
+        margin-bottom: 8rem;
+    }
+    .card {
+        border-radius: 0rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 650px;
+        height: 300px;
+        background-color: var(--material-black);
+    }
+}
+footer {
+        position: relative;
+        z-index: 20;
+        .banner-contact {
+            border-bottom: 1px solid var(--material-gray); 
+            line-height: 1;
+            margin-top: -10rem;
+            margin-bottom: -16rem;
+            color: var(--text-secondary);
+            position: relative;
+            z-index: 15;
+            font-weight:800;
+            font-family: "Anton SC", sans-serif;
+            font-size: var(--font-brand);
+        }
+    .content {
+        background-color: var(--material-gray);
+    }
+    p {
+        font-size: var(--font-default);
+        color: var(--text-secondary);
+        font-weight: medium;
+    }
+    a {
+        font-size: var(--font-default);
+        color: var(--text-secondary);
+        font-weight: medium; 
+    }
+    form {
+        input {
+            font-weight: bolder;
+            color: var(--text-secondary);
+            padding: .5rem 1rem;
+            background-color: var(--material-red-2);
+            border: 1px solid var(--material-red-2);
+        }
+        input:focus {
+            border: 1px solid var(--accent-color);
+        }
+    }
+}

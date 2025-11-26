@@ -1,0 +1,120 @@
+.navigation {
+    width: 100%;
+    margin-top: -6.5rem;
+    .bg-header {
+        object-fit: cover   ;
+        height: 150px;
+    }
+   .nav-logo {
+    color: var(--text-tertiary);
+    font-size: var(--font-small);
+    font-weight: bolder;
+    transition: color 0.3s ease;
+    span {
+        display: none;
+        transition: .2s;
+    }
+   }
+   .nav-logo:hover {
+    border-bottom: 1px solid var(--material-red);
+   }
+   .nav-btn {
+    color: var(--text-tertiary);
+    font-size: var(--font-small);
+    font-weight: bolder;
+    transition: color 0.3s ease;
+    padding: .5rem;
+    button {
+        color: var(--text-primary);
+        font-size: var(--font-small);  
+    }
+   }
+   .logo {
+    margin-bottom: -7rem;
+    height: 80px;
+    z-index: 50;
+    
+   }
+   .banner {
+    margin-top: .5rem;
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: .5rem;
+   }
+    nav {
+        .menu {
+            margin-top: -.8rem;
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            background-color: var(--material-black);
+            animation: baunce01 .2s ease ;
+             width: 50%;
+        }
+        .nav-btn {
+            transition: .2s;
+            color: var(--text-primary);
+            button {
+                color: var(--text-primary);
+                font-size: var(--font-small);
+            }
+
+        }
+        .nav-btn:hover {
+                border-bottom: 1px solid var(--material-white);
+        }
+    }
+}
+#modal-nav {
+    margin-top: 3rem;
+    ol {
+       animation: baunce01 .2s ease ;
+       padding: .8rem 2rem;
+        background-color: var(--material-red);
+       .nav-btn {
+          transition: .2s;
+            color: var(--text-secondary);
+       }
+    }
+}
+
+
+@media screen and (max-width: 968px) {
+.navigation {
+    width: 100%;
+    margin-top: -6.5rem;
+
+   .logo {
+    margin-bottom: -7rem;
+    height: 80px;
+    z-index: 50;
+    
+   }
+   .banner {
+    margin-top: .5rem;
+    width: 90%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: .5rem;
+   }
+    nav {
+        .menu {
+            margin-top: -.8rem;
+ 
+             width: 90%;
+        }
+        .nav-btn {
+            transition: .2s;
+            color: var(--text-primary);
+            button {
+                color: var(--text-primary);
+                font-size: var(--font-small);
+            }
+
+        }
+        .nav-btn:hover {
+                border-bottom: 1px solid var(--material-white);
+        }
+    }
+}
+}

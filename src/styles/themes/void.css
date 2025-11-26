@@ -1,0 +1,30 @@
+
+
+:root {
+    --background-main: #000000;
+
+    --material-black: #000000;
+    --material-red: #E63131;
+    --material-red-2: #a5191977;
+    --material-white: #ffffff;
+    --material-gray: #31313b;
+    
+    --text-primary: #dfdff1;
+    --text-secondary: #31313b;
+    --text-tertiary: #E63131;
+    --text-quaternary: #383844;
+
+    --accent-color: #ff0e0e;
+    --brand-color: #fbfbff;
+
+    --background-glass: rgba(8, 8, 8, 0.226);
+    --stroke-glass: rgba(48, 48, 48, 0.068);
+
+    --background-cards: #fbfbff;
+    --stroke-cards: #111113;
+
+}
+
+.jetbrains-mono {
+    font-family: jetbrains-mono, monospace;
+}
