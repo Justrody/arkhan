@@ -1,0 +1,42 @@
+@import url('../global.css');
+@import url('../components/nav.css');
+@import url('../themes/void.css');
+@import url('../animations/landing.css');
+@import url('../components/glassmorphism.css');
+
+body {
+  background-color: var(--background-main);
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: repeating-linear-gradient(
+      to bottom,
+      rgba(131, 92, 92, 0.062) 0px,  
+      rgba(255, 255, 255, 0.04) 1px,   
+      transparent 4px,                
+      transparent 7px
+  );
+
+  pointer-events: none;   
+  z-index: 9999;            
+  
+  animation: moving-up 22s linear infinite;
+}
+.section-70 {
+    width: 60%;
+}
+
+.overlay-flbars {
+  padding: 50px;
+  font-size: 26px;
+}

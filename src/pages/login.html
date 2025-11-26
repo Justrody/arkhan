@@ -23,8 +23,8 @@
         <form id="login" action="post" class="text-center">
             <h2 class="mb-10">Login</h2>
             <fieldset class="flex flex-col gap-3 mb-5">
-                <input type="text" name="username" id="username" placeholder="Username">
-                <input type="text" name="password" id="password" placeholder="password">
+                <input type="text" required minlength="3"  maxlength="30" pattern="^[a-zA-Z0-9_.-]{3,30}$" name="username" id="username" placeholder="Username">
+                <input type="text" required minlength="8"  maxlength="30" pattern="^[a-zA-Z0-9_.-]{3,30}$" name="password" id="password" placeholder="password">
             </fieldset>
             <fieldset>
                 <fieldset class="flex items-center justify-between gap-20">
@@ -36,7 +36,7 @@
                 </fieldset>
             </fieldset>
             <fieldset class="flex gap-4 mt-10 w-full items-center justify-center">
-                <button>Login</button>
+                <button type="submit">Login</button>
                 <p>Or</p>
                 <button id="register-show" type="button">Register</button>
             </fieldset>
@@ -44,15 +44,15 @@
         <form id="register" action="post" class="text-center hidden">
             <h2 class="mb-10">Register</h2>
             <fieldset class="flex gap-3 mb-5 anim-forms-transition">
-                <input type="text" name="username" id="username" placeholder="Username">
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" required minlength="3"  maxlength="30" pattern="^[a-zA-Z0-9_.-]{3,30}$" name="username" id="username" placeholder="Username">
+                <input type="email" required minlength="3"  maxlength="30" pattern="^[a-zA-Z0-9_.-]{3,30}$" name="email" id="email" placeholder="Email">
             </fieldset>
             <fieldset class="flex flex-col gap-3 mb-5">
-                <input type="text" name="password-primary" id="password-primary" placeholder="Password">
-                <input type="text" name="password-secondary" id="password-secondary" placeholder="Repeat password">
+                <input type="text" required minlength="8"  maxlength="30" pattern="^[a-zA-Z0-9_.-]{3,30}$" name="password-primary" id="password-primary" placeholder="Password">
+                <input type="text" required minlength="8"  maxlength="30" pattern="^[a-zA-Z0-9_.-]{3,30}$" name="password-secondary" id="password-secondary" placeholder="Repeat password">
             </fieldset>
             <fieldset class="flex gap-4 mt-10 w-full items-center justify-center">
-                <button>Register</button>
+                <button type="submit">Register</button>
                 <p>Or</p>
                 <button id="login-show" type="button">Login</button>
             </fieldset>
