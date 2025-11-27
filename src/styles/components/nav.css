@@ -118,3 +118,42 @@
     }
 }
 }
+
+
+.navigation-secondary {
+    width: 50%;
+    font-weight: bolder;
+    .banner-container {
+        width: 100%;
+    }
+    .banner {
+        margin-top: .5rem;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: .5rem;
+    }
+    p {
+        padding: .3rem 2rem;
+    }
+    .nav-logo {
+        padding: .3rem 2rem;
+    }
+    .nav-btn {
+        padding: .3rem 1rem;
+        background-color: var(--material-red-2);
+        transition: .2s;
+    }
+    .nav-btn:hover {
+        padding: .3rem 2rem;
+        background-color: var(--material-white);
+    }
+    input {
+        padding: .3rem 2rem;
+        background-color: var(--material-red-2);
+    }
+    ol {
+        padding: .5rem 1rem;
+        background-color: var(--material-red);
+    }
+}
