@@ -133,6 +133,11 @@
         object-fit: cover;
         border-radius: .5rem;
     }
+    .logo {
+        height: 140px;
+        z-index: 15;
+        position: fixed;
+    }
     p {
         padding: .3rem 2rem;
     }
