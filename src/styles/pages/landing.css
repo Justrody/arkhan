@@ -85,6 +85,7 @@ body::before {
         padding: 1rem;
         border: 1px solid var(--background-glass);
     }
+
 }
 #featured {
     background-color: var(--material-red);
@@ -113,6 +114,7 @@ body::before {
     }
     .rolling-left {
         width: 2000px;
+        margin-left: -10rem;
         animation: rolling-left infinite 20s;
         margin-bottom: 8rem;
     }
@@ -124,6 +126,44 @@ body::before {
         width: 650px;
         height: 300px;
         background-color: var(--material-black);
+        div {
+            transition: .2s;
+            display: none;
+        }
+        img {
+            z-index: 10;
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
+        h2 {
+            opacity: .5;
+            color: var(--text-primary);
+            font-weight: bolder;
+            font-size: var(--font-medium);
+        }
+        p {
+            opacity: .5;
+            line-height: 1.3;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        a {
+            margin-top: .4rem;
+            margin-bottom: .4rem;
+            color: var(--text-secondary);
+            padding: .8rem 2rem;
+            background-color: var(--material-white);
+            font-weight: bolder;
+        }
+    }
+    .card:hover {
+        div {
+            bottom: 2rem;
+            position: fixed;
+            z-index: 15;
+            display: inline;
+        }
     }
 }
 footer {
@@ -144,6 +184,9 @@ footer {
     .content {
         background-color: var(--material-gray);
     }
+    .credits {
+        padding: 2rem;
+    }
     .content-links {
         min-width: 14%;
         padding: 1rem;
@@ -151,8 +194,9 @@ footer {
     }
     .separator {
         height: 1px;
-        background-color: var(--material-gray-2);
-        width: 100%;
+        margin-top: 2rem;
+        background-color: var(--material-red);
+        width: 66%;
     }
     h2 {
         font-size: var(--font-medium);

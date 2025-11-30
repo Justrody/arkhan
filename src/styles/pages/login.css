@@ -34,7 +34,7 @@ body::before {
   animation: moving-up 22s linear infinite;
 }
 .section-70 {
-    width: 60%;
+    width: 70%;
 }
 
 .overlay-flbars {
@@ -46,7 +46,7 @@ body::before {
     width: 40%;
     margin: 2rem;
     padding: 1rem;
-    background-color: var(--material-red);
+    background-color: var(--material-gray-2);
     h1 {
         font-family: "Anton SC", sans-serif;
         font-weight: bolder;
@@ -76,15 +76,15 @@ body::before {
         transition: .2s;
     }
     button:hover {
-        background-color: var(--material-red-2);
+        background-color: var(--material-red);
     }
     form {
         input[type=text], input[type=email] {
             font-weight: bolder;
-            color: var(--text-secondary);
+            color: var(--text-primary);
             padding: .5rem 1rem;
-            background-color: var(--material-red-2);
-            border: 1px solid var(--material-red-2);
+            background-color: var(--material-gray);
+            border: 1px solid var(--material-red);
         }
         input:focus {
             border: 1px solid var(--accent-color);
@@ -92,11 +92,11 @@ body::before {
         input[type=checkbox] {
             appearance: none;
             padding: .5rem;
-            border: 5px solid var(--material-red);
-            background-color: var(--material-red-2);
+            border: 5px solid var(--material-gray);
+            background-color: var(--material-gray);
         }
         input[type=checkbox]:checked {
-            background-color: var(--material-white);
+            background-color: var(--material-red);
             border: 5px solid var(--material-red-2);
         }
     }

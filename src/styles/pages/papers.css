@@ -40,3 +40,34 @@ body::before {
   padding: 50px;
   font-size: 26px;
 }
+
+#papers {
+  .paper {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.13);
+    transition: .2s;
+    width: 50%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--material-gray-2);
+    border-bottom: 5px solid var(--material-gray);
+
+    h3 {
+      font-weight: bolder;
+      color: var(--text-primary);
+      font-size: var(--font-medium);
+    }
+    p {
+      color: var(--text-secondary);
+      font-size: var(--font-default);
+    }
+    span {
+      color: var(--text-primary);
+    }
+  }
+  .paper:hover {
+    margin-top: 3px;
+    border-bottom: 2px solid var(--material-red);
+  }
+}
