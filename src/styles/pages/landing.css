@@ -80,10 +80,33 @@ body::before {
     position: relative;
     z-index: 20;
     background-color: var(--material-black);
+    #foundation {
+        margin-top: 10rem;
+        position: relative;
+        margin-right: 30%;
+    }
     div {
+        max-width: 82rem;
         width: 100%;
-        padding: 1rem;
+        padding: 2rem;
         border: 1px solid var(--background-glass);
+        margin: 2rem;
+        border: 1px solid var(--stroke-glass);
+        h2 {
+            font-weight: bolder;
+            font-size: var(--font-medium-large);
+            color: var(--text-primary);
+            font-family: "Anton SC", sans-serif;
+        }
+        p {
+            max-width: 900px;
+            font-weight: bold;
+            font-size: var(--font-default);
+            color: var(--text-secondary);
+        }
+        span {
+            color: var(--accent-color);
+        }
     }
 
 }
