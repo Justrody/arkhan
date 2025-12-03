@@ -40,34 +40,169 @@ body::before {
   padding: 50px;
   font-size: 26px;
 }
-
-#papers {
+#featured-papers {
+  .banner {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid var(--material-red-2);
+    }
+    .title {
+      height: 150px;
+      object-fit: contain;
+      margin-top: -10rem;
+    }
+  }
+  .separator {
+    width: 50%;
+    height: 2px;
+    background-color: var(--material-red-2);
+  }
   .paper {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.13);
     transition: .2s;
     width: 50%;
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--material-gray-2);
-    border-bottom: 5px solid var(--material-gray);
-
+    background-color: var(--material-red);
+    border: 3px solid var(--material-red-2);
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between  ;
+      width: 100%;
+    }
+    .paper-info {
+      align-items: center;
+      display: flex;
+    }
     h3 {
+      font-family: "Anton SC", sans-serif;
       font-weight: bolder;
       color: var(--text-primary);
       font-size: var(--font-medium);
     }
     p {
-      color: var(--text-secondary);
+      color: var(--text-quaternary);
       font-size: var(--font-default);
     }
     span {
       color: var(--text-primary);
     }
+    #ascii-post {
+      background-color: balck;
+      margin-right: 2rem;
+      max-height:140px;
+      max-width: 140px;
+      overflow: hidden;
+      color: var(--text-primary);
+      font-size: var(--font-extra-small);
+      line-height: .9;
+      -webkit-user-select: none;
+      -ms-user-select: none;   
+      user-select: none;         
+    }
+    #post-tags {
+      display: flex;
+    }
+    .post-tag {
+      margin: .2rem;
+      font-size: var(--font-small);
+      padding: .1rem .5rem;
+      display: flex;
+      font-weight: bolder;
+      background-color: var(--material-gray);
+      border-bottom: 2px solid var(--material-gray-2);
+      span {
+        margin-right: .5rem;
+      }
+    }
   }
   .paper:hover {
-    margin-top: 3px;
-    border-bottom: 2px solid var(--material-red);
+    border: 3px solid var(--material-red);
+  }
+}
+#community-papers {
+  .paper {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.13);
+    transition: .2s;
+    width: 50%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--material-gray-2);
+    border: 3px solid var(--material-gray);
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between  ;
+      width: 100%;
+    }
+    .paper-info {
+      align-items: center;
+      display: flex;
+    }
+    h3 {
+      font-family: "Anton SC", sans-serif;
+      font-weight: bolder;
+      color: var(--text-primary);
+      font-size: var(--font-medium);
+    }
+    p {
+      color: var(--text-quaternary);
+      font-size: var(--font-default);
+    }
+    button {
+      transition: .2s;
+      background-color: var(--material-red);
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      border-bottom: 3px solid var(--material-red-2);
+      color: var(--text-primary);
+    }
+    button:hover {
+      background-color: var(--material-red-2);
+      border-bottom: 3px solid var(--material-red-2);
+    }
+    span {
+      color: var(--text-primary);
+    }
+    #ascii-post {
+      background-color: balck;
+      margin-right: 2rem;
+      max-height:140px;
+      max-width: 140px;
+      overflow: hidden;
+      color: var(--text-tertiary);
+      font-size: var(--font-extra-small);
+      line-height: .9;
+      -webkit-user-select: none;
+      -ms-user-select: none;   
+      user-select: none;         
+    }
+    #post-tags {
+      display: flex;
+    }
+    .post-tag {
+      margin: .2rem;
+      font-size: var(--font-small);
+      padding: .1rem .5rem;
+      display: flex;
+      font-weight: bolder;
+      background-color: var(--material-red);
+      border-bottom: 2px solid var(--material-red-2);
+      span {
+        margin-right: .5rem;
+      }
+    }
+  }
+  .paper:hover {
+    border: 3px solid var(--material-red);
   }
 }

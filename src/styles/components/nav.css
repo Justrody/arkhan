@@ -123,6 +123,8 @@
 .navigation-secondary {
     width: 50%;
     font-weight: bolder;
+    bottom: 1rem;
+    position: fixed;
     .banner-container {
         width: 100%;
     }

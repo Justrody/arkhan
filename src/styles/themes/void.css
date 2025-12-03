@@ -1,7 +1,7 @@
 
 
 :root {
-    --background-main: #000000;
+    --background-main: #070707;
 
     --material-black: #000000;
     --material-red: #E63131;
@@ -15,7 +15,6 @@
     --text-tertiary: #E63131;
     --text-quaternary: #383844;
 
-    --accent-color: #ff0e0e;
     --brand-color: #fbfbff;
 
     --background-glass: rgba(8, 8, 8, 0.226);
