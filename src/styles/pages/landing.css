@@ -1,5 +1,6 @@
 @import url('../global.css');
 @import url('../components/nav.css');
+@import url('../components/modals.css');
 @import url('../themes/void.css');
 @import url('../animations/landing.css');
 @import url('../components/glassmorphism.css');
@@ -9,6 +10,7 @@ body {
   background-color: var(--background-main);
   position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   margin: 0;
 }
 
@@ -81,19 +83,19 @@ body::before {
     background-color: var(--material-black);
     #foundation {
         margin-top: 15rem;
-        opacity: 0;
+        opacity: .4;
         position: relative;
         margin-right: 30%;
     }
     #purpose {
         margin-bottom: 15rem;
         padding-top:5rem;
-        opacity: 0;
+        opacity: .4;
         position: relative;
         margin-right: 30%;
     }
     #partnership {
-        opacity: 0;
+        opacity: .4;
         position: relative;
         margin-left: 30%;  
     }
@@ -125,15 +127,15 @@ body::before {
 #about:hover {
     #foundation {
         opacity: 1;
-        animation: show-left 2s ease;
+        animation: show-left 1s ease;
     }
     #purpose {
         opacity: 1;
-        animation: show-left 2s ease;
+        animation: show-left 1s ease;
     }
     #partnership {
         opacity: 1;
-        animation: show-right 2s ease;
+        animation: show-right 1s ease;
     }
 }
 #featured {

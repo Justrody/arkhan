@@ -1,13 +1,13 @@
 
 @keyframes baunce01 {
      0%,25% {
-         padding: .2rem 2rem;
+         padding: .8rem 4rem;
      }
      25%, 55% {
-            padding: .2rem 3rem;
+            padding: .8rem 2rem;
      }
      55%, 100% {
-         padding: .2rem 2rem;
+         padding: .8rem 3rem;
      }
 }
 @keyframes baunce02 {

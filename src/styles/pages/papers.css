@@ -3,7 +3,7 @@
 @import url('../themes/void.css');
 @import url('../animations/landing.css');
 @import url('../components/glassmorphism.css');
-
+@import url('../components/modals.css');
 body {
   background-color: var(--background-main);
   position: relative;
@@ -42,17 +42,17 @@ body::before {
 }
 #featured-papers {
   .banner {
-    width: 50%;
-    img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border: 2px solid var(--material-red-2);
-    }
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--material-red-2);
+    object-fit: contain;
     .title {
       height: 150px;
       object-fit: contain;
-      margin-top: -10rem;
+      margin-top: -21rem;
     }
   }
   .separator {
@@ -65,16 +65,12 @@ body::before {
     transition: .2s;
     width: 50%;
     padding: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: var(--material-red);
     border: 3px solid var(--material-red-2);
     a {
       display: flex;
-      align-items: center;
+      align-items: left;
       justify-content: space-between  ;
-      width: 100%;
     }
     .paper-info {
       align-items: center;
@@ -95,7 +91,7 @@ body::before {
     }
     #ascii-post {
       background-color: balck;
-      margin-right: 2rem;
+      margin-right: 1rem;
       max-height:140px;
       max-width: 140px;
       overflow: hidden;
@@ -205,4 +201,41 @@ body::before {
   .paper:hover {
     border: 3px solid var(--material-red);
   }
+}
+.paper-opened {
+  width: 50%;
+  padding: 1rem;
+  background-color: var(--background-secondary);
+}
+.paper-upload {
+  padding: 1rem;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+  textarea {
+    padding: 1rem;
+    border: 2px solid var(--material-red);
+    background-color: var(--material-black);
+  }
+  .post-content {
+    width: 800px;
+    height: 500px;
+  }
+    input {
+      font-size: var(--font-small);
+      padding: .5rem 1rem;
+      background-color: var(--material-red);
+    }
+    button {
+      transition: .2s;
+      background-color: var(--material-red);
+      display: flex;
+      gap: 1rem;
+      padding: .5rem 2rem;
+      border-bottom: 3px solid var(--material-red-2);
+      color: var(--text-primary);
+    }
+    button:hover {
+      background-color: var(--material-red-2);
+      border-bottom: 3px solid var(--material-red-2);
+    }
 }
