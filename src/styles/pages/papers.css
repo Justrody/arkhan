@@ -4,6 +4,8 @@
 @import url('../animations/landing.css');
 @import url('../components/glassmorphism.css');
 @import url('../components/modals.css');
+@import url('mobile/papers.css');
+
 body {
   background-color: var(--background-main);
   position: relative;
@@ -42,7 +44,7 @@ body::before {
 }
 #featured-papers {
   .banner {
-    width: 50%;
+    width: 90%;
     overflow: hidden;
     height: 200px;
     display: flex;
@@ -52,18 +54,18 @@ body::before {
     .title {
       height: 150px;
       object-fit: contain;
-      margin-top: -24rem;
+      margin-top: -19rem;
     }
   }
   .separator {
-    width: 50%;
+    width: 90%;
     height: 2px;
     background-color: var(--material-red-2);
   }
   .paper {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.13);
     transition: .2s;
-    width: 50%;
+    width: 90%;
     padding: .5rem;
     background-color: var(--material-red);
     border: 3px solid var(--material-red-2);
@@ -126,7 +128,7 @@ body::before {
   .paper {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.13);
     transition: .2s;
-    width: 50%;
+    width: 40%;
     padding: .5rem;
     display: flex;
     align-items: center;
@@ -158,7 +160,7 @@ body::before {
       background-color: var(--material-red);
       display: flex;
       gap: 1rem;
-      padding: 1rem 2rem;
+      padding: .5rem 1rem;
       border-bottom: 3px solid var(--material-red-2);
       color: var(--text-primary);
     }
@@ -169,32 +171,20 @@ body::before {
     span {
       color: var(--text-primary);
     }
-    #ascii-post {
-      background-color: balck;
-      margin-right: 2rem;
-      max-height:140px;
-      max-width: 140px;
-      overflow: hidden;
-      color: var(--text-tertiary);
-      font-size: var(--font-extra-small);
-      line-height: .9;
-      -webkit-user-select: none;
-      -ms-user-select: none;   
-      user-select: none;         
-    }
     #post-tags {
       display: flex;
-    }
-    .post-tag {
-      margin: .2rem;
-      font-size: var(--font-small);
-      padding: .1rem .5rem;
-      display: flex;
-      font-weight: bolder;
-      background-color: var(--material-red);
-      border-bottom: 2px solid var(--material-red-2);
-      span {
-        margin-right: .5rem;
+      margin-bottom: 1.6rem;
+      .post-tag {
+        margin: .2rem;
+        font-size: var(--font-small);
+        padding: .1rem .5rem;
+        display: flex;
+        font-weight: bolder;
+        background-color: var(--material-red);
+        border-bottom: 2px solid var(--material-red-2);
+        span {
+          margin-right: .5rem;
+        }
       }
     }
   }
@@ -206,45 +196,4 @@ body::before {
   width: 50%;
   padding: 1rem;
   background-color: var(--background-secondary);
-}
-.paper-upload {
-  padding: 1rem;
-  background-color: var(--background-secondary);
-  color: var(--text-primary);
-  a{
-      transition: .2s;
-      background-color: var(--material-red);
-      display: flex;
-      gap: 1rem;
-      padding: .5rem 2rem;
-      border-bottom: 3px solid var(--material-red-2);
-      color: var(--text-primary);
-  }
-  textarea {
-    padding: 1rem;
-    border: 2px solid var(--material-red);
-    background-color: var(--material-black);
-  }
-  .post-content {
-    width: 800px;
-    height: 500px;
-  }
-    input {
-      font-size: var(--font-small);
-      padding: .5rem 1rem;
-      background-color: var(--material-red);
-    }
-    button {
-      transition: .2s;
-      background-color: var(--material-red);
-      display: flex;
-      gap: 1rem;
-      padding: .5rem 2rem;
-      border-bottom: 3px solid var(--material-red-2);
-      color: var(--text-primary);
-    }
-    button:hover {
-      background-color: var(--material-red-2);
-      border-bottom: 3px solid var(--material-red-2);
-    }
 }

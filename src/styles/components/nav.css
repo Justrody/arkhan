@@ -144,7 +144,7 @@
 
 
 .navigation-secondary {
-    width: 50%;
+    width: 45%;
     font-weight: bolder;
     bottom: 1rem;
     position: fixed;
@@ -169,7 +169,7 @@
         padding: .3rem 2rem;
     }
     .nav-logo {
-        padding: .3rem 2rem;
+        padding: .3rem 1rem;
     }
     .nav-profile {
         padding: .3rem 1rem;
@@ -186,11 +186,11 @@
         transition: .2s;
     }
     .nav-btn:hover {
-        padding: .3rem 2rem;
+        padding: .3rem 1.5rem;
         background-color: var(--material-white);
     }
     input {
-        padding: .3rem 2rem;
+        padding: .3rem 1rem;
         background-color: var(--material-red-2);
     }
     ol {
