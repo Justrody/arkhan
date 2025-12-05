@@ -34,3 +34,43 @@
         background-color: var(--material-red-2);
     }
 }
+#account {
+    background-color: var(--background-glass-2);
+    div {
+        padding: 1rem;
+        background-color: var(--material-gray-2);
+        border: 3px solid var(--material-gray);
+        margin: 1rem;
+    }
+    h2 {
+        font-weight: bolder;
+        font-size: var(--font-default);
+        color: var(--text-primary);
+    }
+    p {
+        color: var(--text-secondary);
+    }
+    input {
+        width: 100%;
+        color: var(--text-secondary);
+        background-color: var(--material-red);
+        padding: .5rem;
+        border: 2px solid var(--material-red-2);
+    }
+    button {
+        color: var(--text-primary);
+        background-color: var(--material-red);
+        padding: .5rem;
+        border: 2px solid var(--material-red-2);
+    }
+    fieldset {
+        margin: 1rem 0;
+        width: 100%;
+    }
+    form {
+        a {
+            color: var(--text-tertiary);
+            font-weight: bolder;
+        }
+    }
+}
