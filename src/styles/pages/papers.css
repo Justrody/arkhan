@@ -1,0 +1,196 @@
+@import url('../global.css');
+@import url('../components/nav.css');
+@import url('../themes/void.css');
+@import url('../animations/landing.css');
+@import url('../components/glassmorphism.css');
+@import url('../components/modals.css');
+@import url('mobile/papers.css');
+
+body {
+  background-color: var(--background-main);
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: repeating-linear-gradient(
+      to bottom,
+      rgba(66, 46, 46, 0.13) 0px,  
+      rgba(53, 24, 24, 0.11) 1px,   
+      transparent 4px,                
+      transparent 7px
+  );
+
+  pointer-events: none;   
+  z-index: 9999;            
+  
+  animation: moving-up 22s linear infinite;
+}
+.section-70 {
+    width: 60%;
+}
+
+.overlay-flbars {
+  padding: 50px;
+  font-size: 26px;
+}
+#featured-papers {
+  .banner {
+    width: 90%;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--material-red-2);
+    object-fit: contain;
+    .title {
+      height: 150px;
+      object-fit: contain;
+      margin-top: -19rem;
+    }
+  }
+  .separator {
+    width: 90%;
+    height: 2px;
+    background-color: var(--material-red-2);
+  }
+  .paper {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.13);
+    transition: .2s;
+    width: 90%;
+    padding: .5rem;
+    background-color: var(--material-red);
+    border: 3px solid var(--material-red-2);
+    a {
+      display: flex;
+      align-items: left;
+      justify-content: space-between  ;
+    }
+    .paper-info {
+      align-items: center;
+      display: flex;
+    }
+    h3 {
+      font-family: "Anton SC", sans-serif;
+      font-weight: bolder;
+      color: var(--text-primary);
+      font-size: var(--font-medium);
+    }
+    p {
+      color: var(--text-quaternary);
+      font-size: var(--font-default);
+    }
+    span {
+      color: var(--text-primary);
+    }
+    #ascii-post {
+      background-color: balck;
+      margin-right: 1rem;
+      max-height:140px;
+      max-width: 140px;
+      overflow: hidden;
+      color: var(--text-primary);
+      font-size: var(--font-extra-small);
+      line-height: .9;
+      -webkit-user-select: none;
+      -ms-user-select: none;   
+      user-select: none;         
+    }
+    #post-tags {
+      display: flex;
+    }
+    .post-tag {
+      margin: .2rem;
+      font-size: var(--font-small);
+      padding: .1rem .5rem;
+      display: flex;
+      font-weight: bolder;
+      background-color: var(--material-gray);
+      border-bottom: 2px solid var(--material-gray-2);
+      span {
+        margin-right: .5rem;
+      }
+    }
+  }
+  .paper:hover {
+    border: 3px solid var(--material-red);
+  }
+}
+#community-papers {
+  .paper {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.13);
+    transition: .2s;
+    width: 40%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--material-gray-2);
+    border: 3px solid var(--material-gray);
+    .paper-info {
+      width: 100%;
+      align-items: center;
+      display: flex;
+    }
+    h3 {
+      font-family: "Anton SC", sans-serif;
+      font-weight: bolder;
+      color: var(--text-primary);
+      font-size: var(--font-medium);
+    }
+    p {
+      color: var(--text-quaternary);
+      font-size: var(--font-default);
+    }
+    button {
+      transition: .2s;
+      background-color: var(--material-red);
+      display: flex;
+      gap: 1rem;
+      padding: .5rem 1rem;
+      border-bottom: 3px solid var(--material-red-2);
+      color: var(--text-primary);
+    }
+    button:hover {
+      background-color: var(--material-red-2);
+      border-bottom: 3px solid var(--material-red-2);
+    }
+    span {
+      color: var(--text-primary);
+    }
+    #author-post {
+      display: flex;
+    }
+    #post-tags {
+      display: flex;
+      margin-bottom: 1.6rem;
+      .post-tag {
+        margin: .2rem;
+        font-size: var(--font-small);
+        padding: .1rem .5rem;
+        display: flex;
+        font-weight: bolder;
+        background-color: var(--material-red);
+        border-bottom: 2px solid var(--material-red-2);
+        span {
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+  .paper:hover {
+    border: 3px solid var(--material-red);
+  }
+}
+.paper-opened {
+  width: 50%;
+  padding: 1rem;
+  background-color: var(--background-secondary);
+}

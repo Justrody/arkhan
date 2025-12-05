@@ -1,0 +1,311 @@
+@import url('../global.css');
+@import url('../components/nav.css');
+@import url('../components/modals.css');
+@import url('../themes/void.css');
+@import url('../animations/landing.css');
+@import url('../components/glassmorphism.css');
+
+
+body {
+  background-color: var(--background-main);
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: repeating-linear-gradient(
+      to bottom,
+      rgba(66, 46, 46, 0.13) 0px,  
+      rgba(53, 24, 24, 0.11) 1px,   
+      transparent 4px,                
+      transparent 7px
+  );
+
+
+  pointer-events: none;   
+  z-index: 9999;            
+  
+  animation: moving-up 22s linear infinite;
+}
+
+.overlay-flbars {
+  padding: 50px;
+  font-size: 26px;
+}
+
+#introduction {
+    height: 60vh;
+        margin-bottom: 20rem;
+        font-family: "Anton SC", sans-serif;
+    h1 {
+        animation: pop-in 1s ease;
+        font-size: var(--font-medium-large);
+        font-weight: bolder;
+        color: var(--text-primary); 
+        line-height: 1;
+    }
+    span {
+        color: var(--material-red);
+    }
+    p {
+        font-size: var(--font-default);
+        font-weight: bolder;
+        color: var(--text-quaternary);      
+        margin-bottom: -8rem;
+    }
+}
+.void-transition {
+    animation: moving-down .5s ease;
+    border-bottom: 1px solid var(--material-red); 
+    line-height: 1;
+    margin-bottom: -24rem;
+    margin-top: -14rem;
+    color: var(--text-tertiary);
+    position: relative;
+    z-index: 15;
+    font-weight:800;
+    font-family: "Anton SC", sans-serif;
+    font-size: var(--font-brand);
+
+}
+
+#about {
+    position: relative;
+    z-index: 20;
+    background-color: var(--material-black);
+    #foundation {
+        margin-top: 15rem;
+        opacity: .4;
+        position: relative;
+        margin-right: 30%;
+    }
+    #purpose {
+        margin-bottom: 15rem;
+        padding-top:5rem;
+        opacity: .4;
+        position: relative;
+        margin-right: 30%;
+    }
+    #partnership {
+        opacity: .4;
+        position: relative;
+        margin-left: 30%;  
+    }
+    div {
+        max-width: 82rem;
+        width: 100%;
+        padding: 2rem;
+        border: 1px solid var(--background-glass);
+        margin: 2rem;
+        border: 1px solid var(--stroke-glass);
+        h2 {
+            font-weight: bolder;
+            font-size: var(--font-medium-large);
+            color: var(--text-primary);
+            font-family: "Anton SC", sans-serif;
+        }
+        p {
+            max-width: 900px;
+            font-weight: bold;
+            font-size: var(--font-default);
+            color: var(--text-secondary);
+        }
+        span {
+            color: var(--accent-color);
+        }
+    }
+
+}
+#about:hover {
+    #foundation {
+        opacity: 1;
+        animation: show-left 1s ease;
+    }
+    #purpose {
+        opacity: 1;
+        animation: show-left 1s ease;
+    }
+    #partnership {
+        opacity: 1;
+        animation: show-right 1s ease;
+    }
+}
+#featured {
+    background-color: var(--material-red);
+        position: relative;
+        z-index: 20;
+    .rolling-transition {
+        margin-top: 1.2rem;
+        background-color: var(--material-black);
+    }
+    
+    .rolling {
+        font-size: var(--font-default);
+        color: var(--text-secondary);
+        margin-top: 1rem;
+        animation: rolling-left 10s linear infinite;
+        transition: filter 0.5s;
+        animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
+        margin-bottom: 1rem;
+        margin-left: -100rem;
+    }
+    .rolling-right {
+        width: 2000px;
+        margin-top: 8rem;
+        animation: rolling-right infinite 20s;
+        margin-bottom: 2rem;
+    }
+    .rolling-left {
+        width: 2000px;
+        margin-left: -10rem;
+        animation: rolling-left infinite 20s;
+        margin-bottom: 8rem;
+    }
+    .card {
+        transition: .2s;
+        border-radius: 0rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 650px;
+        height: 300px;
+        background-color: var(--material-black);
+        div {
+            transition: .2s;
+            display: none;
+        }
+        img {
+            z-index: 10;
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
+        h2 {
+            opacity: .5;
+            color: var(--text-primary);
+            font-weight: bolder;
+            font-size: var(--font-medium);
+        }
+        p {
+            opacity: .5;
+            line-height: 1.3;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+        a {
+            transition: .2s;
+            margin-top: .4rem;
+            margin-bottom: .4rem;
+            color: var(--text-secondary);
+            padding: .8rem 2rem;
+            background-color: var(--material-white);
+            font-weight: bolder;
+        }
+        a:hover {
+            padding: .8rem 3rem;
+        }
+    }
+    .card:hover {
+        div {
+            animation: fadein .5s ease;
+            bottom: 2rem;
+            position: fixed;
+            z-index: 15;
+            display: inline;
+        }
+    }
+}
+footer {
+        position: relative;
+        z-index: 20;
+        .banner-contact {
+            border-bottom: 1px solid var(--material-gray); 
+            line-height: 1;
+            margin-top: -15rem;
+            margin-bottom: -16rem;
+            color: var(--text-secondary);
+            position: relative;
+            z-index: 15;
+            font-weight:800;
+            font-family: "Anton SC", sans-serif;
+            font-size: var(--font-brand);
+        }
+    .content {
+        background-color: var(--material-gray);
+    }
+    .credits {
+        padding: 2rem;
+    }
+    .content-links {
+        min-width: 14%;
+        padding: 1rem;
+        background-color: var(--material-gray-2);
+    }
+    .separator {
+        height: 1px;
+        margin-top: 2rem;
+        background-color: var(--material-red);
+        width: 66%;
+    }
+    h2 {
+        font-size: var(--font-medium);
+        color: var(--text-primary);
+        font-weight: bolder;  
+    }
+    p {
+        font-size: var(--font-default);
+        color: var(--text-quaternary);
+        font-weight: medium;
+    }
+    a {
+        font-size: var(--font-default);
+        color: var(--text-tertiary);
+        font-weight: medium; 
+    }
+    form {
+        width: 500px;
+        display: flex;
+        padding: 1rem;
+        input {
+            width: 100%;
+            font-weight: bolder;
+            color: var(--text-primary);
+            padding: .5rem 2rem;
+            background-color: var(--material-gray-2);
+            border: 1px solid var(--material-gray-2);
+        }
+        select {
+            width: 100%;
+            color: var(--text-primary);
+            padding: .5rem 1.4rem;
+            background-color: var(--material-gray-2);
+            border: 1px solid var(--material-gray-2);   
+        }
+        textarea {
+            height: 200px;
+            width: 100%;
+            min-width: 240px;
+            color: var(--text-primary);
+            padding: .5rem 1rem;
+            background-color: var(--material-gray-2);
+            border: 1px solid var(--material-gray-2);
+        }
+        input:focus {
+            border: 1px solid var(--accent-color);
+        }
+        button {
+            color: var(--text-secondary);
+            padding: .5rem 1rem;
+            background-color: var(--material-white);
+        }
+    }
+}
