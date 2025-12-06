@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/styles/pages/papers.css">
+    <link rel="stylesheet" href="./static/styles/output.css">
+    <title>Arkhan.Team</title>
+</head>
+<body class="jetbrains-mono flex flex-col">
+   <header class="w-full flex items-center justify-center">
+        <nav class="navigation-secondary">
+            <div class="flex w-full items-center justify-between">
+                <div class="flex items-center gap-2 justify-center">
+                    <ol>
+                        <li class="nav-logo"><a href="./static/landing.html">Arkhan.team</a></li>
+                    </ol>
+                    <ol>
+                        <li class="search-papers"><input type="search" id=""></li>
+                    </ol>
+                </div>
+                <ol class="flex items-center gap-2">
+                    <li class="nav-profile"><button id="post-content">+</button></li>
+                    <div id="nav-auth" class="flex"> 
+                        <li class="nav-profile"><button id="open-modal"></button></li>
+                        <li class="nav-profile"><button id="login-open-btn"">Login</button></li>
+                    </div>
+                </ol>           
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="modal-nav-2" class="z-20 hidden fixed w-full items-center justify-center flex">
+        <ol class="flex flex-col gap-5 items-center justify-center">
+            <li class="nav-btn"><button id="settings-open-btn">Account</button></li>
+            <li class="nav-btn"><a>Profile</a></li>
+            <li class="separator"></li>
+            <li class="nav-btn">Upvotes <span>0</span></li>
+        </ol>
+    </section>
+
+    <main id="main-content">
+        <section id="feed-view" class="view">
+            <ol id="featured-papers" class="flex flex-col gap-5 items-center justify-center mt-10">
+                <div class="banner">
+                    <img src="./static/assets/banners/banner2.svg" alt="banner">
+                    <img class="title" src="./static/assets/banners/arkhan_name.svg" alt="arkhan-logo">
+                </div>
+                <li class="announcement overflow-hidden">
+                    <div class="flex">
+                        <h1>Anuncio_importante</h1>
+                        <h1>Anuncio_importante</h1>
+                        <h1>Anuncio_importante</h1>
+                        <h1>Anuncio_importante</h1>
+                        <h1>Anuncio_importante</h1>
+                        <h1>Anuncio_importante</h1>
+                        <h1>Anuncio_importante</h1>
+                        <h1>Anuncio_importante</h1>
+                        <h1>Anuncio_importante</h1>
+                    </div>
+                </li>
+            </ol>
+            <ol id="community-papers" class="w-full flex flex-col gap-5 items-center justify-center mt-24">
+            </ol>
+        </section>
+
+        <section id="editor-view" class=" view z-50 hidden fixed h-screen w-full items-center justify-center flex">
+            <form class="paper-upload">
+                <div class="flex mb-2 w-full items-center justify-between"> 
+                    <button id="close-upload-btn">x</button>
+                </div>
+                <fieldset class="flex flex-col gap-2 mb-5">
+                    <input type="text" id="paper_title" placeholder="Post title" required>
+                    <input type="text" id="paper_keywords" placeholder="Post tags using , to separate" required>
+                </fieldset>
+                <fieldset>
+                    <textarea class="post-content" id="post-content" placeholder="Your article in .md format"></textarea>
+                    <div id="preview"></div>
+                </fieldset>
+                <fieldset class="flex items-center justify-between mb-10">
+                    <div>
+                        <button id="show-preview-btn" type="button">Preview</button>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="submit">Post Article</button>
+                        <button type="button">Preview</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        
+       <section id="profile-view" class="view hidden">
+            <div id="profile-header">
+            </div>
+            <div id="profile-papers">
+            </div>
+        </section>
+
+        <section id="account" class="z-50 fixed hidden w-full h-screen flex items-center justify-center">
+            <div>
+                <button id="close-account-btn">x</button>
+                <div class="flex flex-col gap-2 items-center justify-center">
+                    <h2>Account Settings</h2>
+                    <p>Manage your account settings and preferences.</p>
+                    <form id="profile-settings" class="flex flex-col items-center justify-center">
+                        <fieldset class="flex gap-2 items-center justify-center flex-col w-full">
+                            <input class="w-full" type="email" id="email-change" placeholder="Change e-mail">
+                            <input class="w-full" type="text" id="username-change" placeholder="Username">
+                        </fieldset>
+                        <fieldset class="flex gap-1 items-center justify-center w-full">
+                            <input type="password" id="password-change" placeholder="Change password">
+                            <input type="password" id="password-current" placeholder="your current password">
+                        </fieldset>
+                        <fieldset class="flex flex-col gap-5 items-center justify-center">
+                            <button type="submit">Save infos</button>
+                            <button class="delete-account">Delete your account</button>
+                            <a href="">Forgot password</a>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="login-register-form" class="w-full z-50 hidden fixed flex items-center justify-center ">
+            <div class="background">
+                <div class="mb-5">
+                    <button id="close-login-btn">x</button>
+                </div>
+                <form id="login-form" class="text-center">
+                    <fieldset class="flex flex-col gap-3 mb-5">
+                        <input type="text" required minlength="3"  maxlength="30" name="login-username" id="login-username" placeholder="Username or Email">
+                        <input type="text" required minlength="8"  maxlength="30" name="login-password" id="login-password" placeholder="password">
+                    </fieldset>
+                    <fieldset>
+                            <a href="">Frogot password?</a> 
+                    </fieldset>
+                    <fieldset class="flex gap-4 mt-10 w-full items-center justify-center">
+                        <button type="submit">Login</button>
+                        <p>Or</p>
+                        <button id="register-show" type="button">Register</button>
+                    </fieldset>
+                </form>
+                <form id="register-form" class="text-center hidden">
+                    <fieldset class="flex gap-3 mb-5 anim-forms-transition">
+                        <input type="text" required minlength="3"  maxlength="30" pattern="^[a-zA-Z0-9_-]+$" name="register-username" id="register-username" placeholder="Username">
+                        <input type="email" required minlength="3"  maxlength="30"  name="register-email" id="register-email" placeholder="Email">
+                    </fieldset>
+                    <fieldset class="flex flex-col gap-3 mb-5">
+                        <input type="password" required minlength="8"  maxlength="30" name="register-password-primary" id="register-password-primary" placeholder="Password">
+                        <input type="password" required minlength="8"  maxlength="30" name="register-password-secondary" id="register-password-secondary" placeholder="Repeat password">
+                    </fieldset>
+                    <fieldset class="flex gap-4 mt-10 w-full items-center justify-center">
+                        <button type="submit">Register</button>
+                        <p>Or</p>
+                        <button id="login-show" type="button">Login</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <div id="toast-container"></div>
+    </main>
+    <script src="/static/scripts/app.js"></script>
+    <script src="/static/scripts/ui/articleModals.js"></script>
+</body>
+</html>

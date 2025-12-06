@@ -1,0 +1,28 @@
+# server
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+
+# database
+alembic
+sqlalchemy>=2.0.36
+
+# auth
+python-jose[cryptography]>=3.3.0
+bcrypt>=4.2.0
+
+# validations
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+email-validator>=2.2.0
+
+# markdown
+markdown>=3.7
+bleach>=6.2.0
+tinycss2>=1.3.0
+
+# date
+python-dateutil>=2.9.0
+
+# seed
+faker>=30.0.0

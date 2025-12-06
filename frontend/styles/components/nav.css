@@ -1,0 +1,220 @@
+.navigation {
+    width: 100%;
+    margin-top: -6.5rem;
+    .bg-header {
+        object-fit: cover   ;
+        height: 150px;
+    }
+   .nav-logo {
+    color: var(--text-tertiary);
+    font-size: var(--font-small);
+    font-weight: bolder;
+    transition: color 0.3s ease;
+    span {
+        display: none;
+        transition: .2s;
+    }
+   }
+   .nav-logo:hover {
+        border-bottom: 1px solid var(--material-red);
+   }
+   .nav-btn {
+    color: var(--text-tertiary);
+    font-size: var(--font-small);
+    font-weight: bolder;
+    transition: color 0.3s ease;
+    padding: .5rem;
+    button {
+        color: var(--text-primary);
+        font-size: var(--font-small);  
+    }
+   }
+   .logo {
+    margin-bottom: -7rem;
+    height: 80px;
+    z-index: 50;
+    
+   }
+   .banner {
+    margin-top: .5rem;
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: .5rem;
+   }
+    nav {
+        .menu {
+            margin-top: -.8rem;
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            background-color: var(--material-black);
+            animation: baunce01 .2s ease ;
+             width: 50%;
+        }
+        .nav-btn {
+            transition: .2s;
+            color: var(--text-primary);
+            button {
+                color: var(--text-primary);
+                font-size: var(--font-small);
+            }
+
+        }
+        .nav-btn:hover {
+                border-bottom: 1px solid var(--material-white);
+        }
+    }
+}
+#modal-nav {
+    margin-top: 3rem;
+    ol {
+       animation: baunce01 .5s ease ;
+       padding: .8rem 3rem;
+        background-color: var(--material-red);
+       .nav-btn {
+          transition: .2s;
+            color: var(--text-secondary);
+       }
+       .nav-btn:hover {
+            background-color: var(--text-primary);
+       }
+    }
+}
+#modal-nav-2 {
+    left: 29.3rem;
+    bottom: 4rem;
+    ol {
+       animation: baunce01 .5s ease ;
+       padding: .8rem 1.7rem;
+        background-color: var(--material-red);
+       .nav-btn {
+          transition: .2s;
+            color: var(--text-secondary);
+       }
+       .nav-btn:hover {
+            background-color: var(--text-primary);
+       }
+    }
+    .separator {
+        width: 100%;
+        height: 2px;
+        background-color: var(--material-red-2);
+    }
+}
+
+@media screen and (max-width: 968px) {
+.navigation {
+    width: 100%;
+    margin-top: -6.5rem;
+
+   .logo {
+    margin-bottom: -7rem;
+    height: 80px;
+    z-index: 50;
+    
+   }
+   .banner {
+    margin-top: .5rem;
+    width: 90%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: .5rem;
+   }
+    nav {
+        .menu {
+            margin-top: -.8rem;
+ 
+             width: 90%;
+        }
+        .nav-btn {
+            transition: .2s;
+            color: var(--text-primary);
+            button {
+                color: var(--text-primary);
+                font-size: var(--font-small);
+            }
+
+        }
+        .nav-btn:hover {
+                border-bottom: 1px solid var(--material-white);
+        }
+    }
+}
+}
+
+
+.navigation-secondary {
+    width: 40%;
+    font-weight: bolder;
+    top: 20rem;
+    position: fixed;
+    .banner-container {
+        width: 100%;
+    }
+    .banner {
+        margin-top: .5rem;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+
+    }
+    .logo {
+        height: 140px;
+        z-index: 15;
+        margin-top: -10rem;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    p {
+        padding: .3rem 2rem;
+    }
+    .nav-logo {
+        padding: .3rem 1rem;
+    }
+    .nav-profile {
+        padding: .3rem 1rem;
+        background-color: var(--material-red-2);
+        transition: .2s;
+    }
+    .nav-profile:hover {
+        padding: .3rem 1rem;
+        background-color: var(--material-white);
+    }
+    input {
+        padding: .3rem 1rem;
+        background-color: var(--material-red-2);
+    }
+    ol {
+        padding: .5rem 1rem;
+        background-color: var(--material-red);
+    }
+}
+@media screen and (max-width: 1868px) {
+    
+    .navigation-secondary {
+        top: auto;
+        bottom: 1rem;
+        width: 100%;
+    .nav-logo {
+        padding: .3rem 0rem;
+    }
+    .nav-profile {
+        padding: .3rem 1rem;
+        background-color: var(--material-red-2);
+        transition: .2s;
+    }
+    .nav-profile:hover {
+        padding: .3rem 1rem;
+        background-color: var(--material-white);
+    }
+    input {
+        max-width: 100px;
+        padding: .3rem .5em;
+        background-color: var(--material-red-2);
+    }
+    ol {
+        padding: .5rem .5rem;
+        background-color: var(--material-red);
+    }
+    }
+}
