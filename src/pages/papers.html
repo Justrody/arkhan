@@ -21,10 +21,6 @@
                         <ol>
                             <li class="nav-logo"><a href="index.html">Arkhan.team</a></li>
                         </ol>
-                        <ol class="flex items-center gap-2">
-                            <li class="nav-btn"><a href="">Home</a></li>
-                            <li class="nav-btn"><a href="">Socials</a></li>
-                        </ol>
                         <ol>
                             <li class="search-papers"><input type="search" name="" id=""></li>
                         </ol>
@@ -92,7 +88,7 @@
                 </fieldset>
                 <fieldset class="flex items-center justify-between mb-10">
                     <div>
-                        <button>Preview</button>
+                        <button id="show-preview-btn">Preview</button>
                     </div>
                     <div class="flex gap-2 ">
                         <button type="submit">Submeter Artigo</button>
@@ -102,13 +98,22 @@
             </form>
         </section>
 
+        <section id="markdown-body" class="z-50 hidden fixed h-screen w-full items-center justify-center flex">
+            <div class="paper-content">
+                <button id="close-paper">x</button>
+                <div class="paper">
+
+                </div>
+            </div>
+        </section>
+
     <main class="w-full flex flex-col items-center justify-center">
-        <ol id="featured-papers" class=" flex flex-col gap-5 items-center justify-center mt-24">
+        <ol id="featured-papers" class=" flex flex-col gap-5 items-center justify-center mt-10">
             <div class="banner ">
                 <img src="../assets/banners/banner2.svg" alt="banner">
                 <img class="title" src="../assets/banners/arkhan_name.svg" alt="arkhan-logo">
             </div>
-             <li class="paper" >
+             <li class="announcment" >
                 <div>
                     <div class="paper-info">
                         <pre id="ascii-post">
@@ -135,7 +140,7 @@
         </ol>
         <ol id="community-papers" class="w-full flex flex-col gap-5 items-center justify-center mt-24">
             <li class="paper" >
-                <a href="">
+                <a href="#">
                     <div class="paper-info">
                         <div>
                             <h3 id="title-post">Lorem, ipsum dolor.</h3>
@@ -146,7 +151,7 @@
                         </div>
                     </div>
                     <div id="reaction-btns">
-                        <button id="aprove" type=""><img src="../assets/icons/svgs/" alt="upvote"></button>
+                        <button id="upvote" type=""><img src="../assets/icons/upvote.svg" alt="upvote"></button>
                     </div>
                 </a>
             </li>

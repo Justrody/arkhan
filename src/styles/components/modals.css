@@ -119,3 +119,27 @@
       border-bottom: 3px solid var(--material-red-2);
     }
 }
+
+#markdown-body {
+    .paper-content {
+        width: 50%;
+        height: 100%;
+        background-color: var(--background-secondary);
+        border: 2px solid var(--stroke-glass);
+        padding: 2rem;
+        overflow-y: scroll;
+        button {
+        transition: .2s;
+        background-color: var(--material-red);
+        display: flex;
+        gap: 1rem;
+        padding: .5rem 2rem;
+        border-bottom: 3px solid var(--material-red-2);
+        color: var(--text-primary);
+        }
+        button:hover {
+        background-color: var(--material-red-2);
+        border-bottom: 3px solid var(--material-red-2);
+        }
+    }
+}

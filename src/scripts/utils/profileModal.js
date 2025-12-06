@@ -37,3 +37,17 @@ close_upload_modal_btn.addEventListener("click", () => {
     post_modal.classList.add("hidden");
 }
 );
+
+const open_markdown = document.querySelector(".paper");
+const markdown_file = document.getElementById("markdown-body");
+const close_markdown_btn = document.getElementById("close-paper");
+
+open_markdown.addEventListener("click", (e) => {
+    e.stopPropagation();
+    markdown_file.classList.remove("hidden");
+})
+close_markdown_btn.addEventListener("click", () => {
+    markdown_file.classList.add("hidden");
+}
+);
+

@@ -11,16 +11,16 @@
     --font-extra-small: .8rem;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1868px) {
     :root {
-        --font-brand: 12rem;
-        --font-extra-large: 10rem;
-        --font-large: 8rem;
-        --font-medium-large: 4rem;
-        --font-medium: 2rem;
-        --font-default: 1.2rem;
-        --font-small: 1rem;
-        --font-extra-small: .8rem;
+        --font-brand: 8rem;
+        --font-extra-large: 7rem;
+        --font-large: 4rem;
+        --font-medium-large: 2rem;
+        --font-medium: 1.3rem;
+        --font-default: 1rem;
+        --font-small: .8rem;
+        --font-extra-small: .6rem;
     } 
 }
 .no-select {

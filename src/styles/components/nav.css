@@ -180,15 +180,6 @@
         padding: .3rem 1rem;
         background-color: var(--material-white);
     }
-    .nav-btn {
-        padding: .3rem 1rem;
-        background-color: var(--material-red-2);
-        transition: .2s;
-    }
-    .nav-btn:hover {
-        padding: .3rem 1.5rem;
-        background-color: var(--material-white);
-    }
     input {
         padding: .3rem 1rem;
         background-color: var(--material-red-2);
@@ -196,5 +187,32 @@
     ol {
         padding: .5rem 1rem;
         background-color: var(--material-red);
+    }
+}
+@media screen and (max-width: 1868px) {
+    
+    .navigation-secondary {
+        width: 100%;
+    .nav-logo {
+        padding: .3rem 0rem;
+    }
+    .nav-profile {
+        padding: .3rem 1rem;
+        background-color: var(--material-red-2);
+        transition: .2s;
+    }
+    .nav-profile:hover {
+        padding: .3rem 1rem;
+        background-color: var(--material-white);
+    }
+    input {
+        max-width: 100px;
+        padding: .3rem .5em;
+        background-color: var(--material-red-2);
+    }
+    ol {
+        padding: .5rem .5rem;
+        background-color: var(--material-red);
+    }
     }
 }
