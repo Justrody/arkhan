@@ -180,6 +180,7 @@ body::before {
         height: 300px;
         background-color: var(--material-black);
         div {
+            z-index: 15;
             transition: .2s;
             display: none;
         }
@@ -190,15 +191,14 @@ body::before {
             width: 100%;
         }
         h2 {
-            opacity: .5;
             color: var(--text-primary);
             font-weight: bolder;
             font-size: var(--font-medium);
         }
         p {
-            opacity: .5;
+            max-width: 450px;
             line-height: 1.3;
-            color: var(--text-secondary);
+            color: var(--material-red);
             margin-bottom: 3rem;
         }
         a {
@@ -215,11 +215,14 @@ body::before {
         }
     }
     .card:hover {
+        img {
+            filter: blur(3px);
+        }
         div {
-            animation: fadein .5s ease;
+            animation: fadein .2s ease;
             bottom: 2rem;
             position: fixed;
-            z-index: 15;
+            z-index: 25;
             display: inline;
         }
     }
@@ -306,6 +309,52 @@ footer {
             color: var(--text-secondary);
             padding: .5rem 1rem;
             background-color: var(--material-white);
+        }
+    }
+}
+@media screen and (max-width: 1068px) {
+    #introduction {
+        height: 60vh;
+            margin-bottom: 20rem;
+            font-family: "Anton SC", sans-serif;
+        h1 {
+            animation: pop-in 1s ease;
+            font-size: var(--font-medium-large);
+            font-weight: bolder;
+            color: var(--text-primary); 
+            line-height: 1;
+        }
+        span {
+            color: var(--material-red);
+        }
+        p {
+            font-size: var(--font-default);
+            font-weight: bolder;
+            color: var(--text-quaternary);      
+            margin-bottom: -8rem;
+        }
+    }
+    .void-transition {
+        animation: moving-down .5s ease;
+        border-bottom: 1px solid var(--material-red); 
+        line-height: 1;
+        margin-bottom: -16rem;
+        margin-top: -16rem;
+
+    }
+    #featured {
+        .card {
+            width: 400px;
+            height: 250px;
+            p {
+                max-width: 400px;
+            }
+            img {
+                z-index: 10;
+                object-fit: cover;
+                height: 250px;
+                width: 100%;
+            }
         }
     }
 }

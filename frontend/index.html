@@ -18,15 +18,15 @@
                     <ol>
                         <li class="nav-logo"><a href="./static/landing.html">Arkhan.team</a></li>
                     </ol>
-                    <ol>
-                        <li class="search-papers"><input type="search" id=""></li>
+                    <ol class="hide-search-pc ">
+                        <li class="search-papers "><input type="search" id="search-bar-pc"></li>
                     </ol>
                 </div>
                 <ol class="flex items-center gap-2">
-                    <li class="nav-profile"><button id="post-content">+</button></li>
+                    <li class="nav-profile"><button id="create-post">+</button></li>
                     <div id="nav-auth" class="flex"> 
-                        <li class="nav-profile"><button id="open-modal"></button></li>
-                        <li class="nav-profile"><button id="login-open-btn"">Login</button></li>
+                        <li class="nav-profile"><button id="open-modal">{{placeholder}}</button></li>
+                        <li class="nav-profile"><button id="login-open-btn">Login</button></li>
                     </div>
                 </ol>           
             </div>
@@ -36,16 +36,16 @@
 
     <section id="modal-nav-2" class="z-20 hidden fixed w-full items-center justify-center flex">
         <ol class="flex flex-col gap-5 items-center justify-center">
-            <li class="nav-btn"><button id="settings-open-btn">Account</button></li>
+            <li class="nav-btn"><button id="settings-open-btn">Settings</button></li>
             <li class="nav-btn"><a>Profile</a></li>
-            <li class="separator"></li>
-            <li class="nav-btn">Upvotes <span>0</span></li>
+              <li class="nav-btn"><button id="logout-btn">Logout</button></li>
         </ol>
     </section>
 
     <main id="main-content">
         <section id="feed-view" class="view">
             <ol id="featured-papers" class="flex flex-col gap-5 items-center justify-center mt-10">
+            <li class="search-papers pc-hidden"><input type="search" id="search-bar-mobile" placeholder="Search some topic or tags"></li>
                 <div class="banner">
                     <img src="./static/assets/banners/banner2.svg" alt="banner">
                     <img class="title" src="./static/assets/banners/arkhan_name.svg" alt="arkhan-logo">
@@ -112,10 +112,10 @@
                             <input class="w-full" type="text" id="username-change" placeholder="Username">
                         </fieldset>
                         <fieldset class="flex gap-1 items-center justify-center w-full">
-                            <input type="password" id="password-change" placeholder="Change password">
+                            <input type="password" id="password-change" placeholder="New password">
                             <input type="password" id="password-current" placeholder="your current password">
                         </fieldset>
-                        <fieldset class="flex flex-col gap-5 items-center justify-center">
+                        <fieldset class="flex  gap-5 items-center justify-center">
                             <button type="submit">Save infos</button>
                             <button class="delete-account">Delete your account</button>
                             <a href="">Forgot password</a>

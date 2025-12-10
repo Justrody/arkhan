@@ -61,6 +61,15 @@ body::before {
     height: 2px;
     background-color: var(--material-red-2);
   }
+  .pc-hidden {
+    display: none;
+  }
+  input {
+    width: 100%;
+    padding: .3rem .5em;
+    border: 3px solid var(--material-red-2);
+    background-color: var(--material-red);
+  }
   .announcement {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.13);
     transition: .2s;
@@ -202,11 +211,17 @@ body::before {
 /*mobile*/
 @media screen and (max-width: 1868px) {
   #featured-papers {
+      .announcement {
+        width: 90%;
+      }
     .banner {
+      width: 90% ;
       height: 120px;
       .title {
+        margin-left: 2rem;
+        width: 90%;
         height: 150px;
-        margin-top: -8rem;
+        margin-top: -14rem;
       }
     }
     
@@ -224,11 +239,15 @@ body::before {
 }
 @media screen and (max-width: 1600px) {
   #featured-papers {
+      .announcement {
+        width: 90%;
+      }
     .banner {
+      width: 100% ;
       height: 120px;
       .title {
         height: 100px;
-        margin-top: -20rem;
+        margin-top: -31rem;
       }
     }
   }
@@ -248,8 +267,9 @@ body::before {
     .banner {
       height: 120px;
       .title {
+
         height: 100px;
-        margin-top: -20rem;
+        margin-top: -25rem;
       }
     }
   }
@@ -285,17 +305,68 @@ body::before {
     }
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 980px) {
   #featured-papers {
     .banner {
       height: 120px;
       .title {
         height: 100px;
-        margin-top: -10rem;
+        margin-top: -20rem;
+      }
+    }
+  }
+    #community-papers {
+      .paper {
+        width: 90%;
+        .paper-info {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+        }  
+    }
+  }
+}
+@media screen and (max-width: 880px) {
+  #featured-papers {
+    .banner {
+      width: 90%;
+      height: 120px;
+      .title {
+        height: 100px;
+        margin-top: -19.5rem;
       }
     }
   }
 }
+@media screen and (max-width: 780px) {
+  #featured-papers {
+    .pc-hidden {
+      width: 90%;
+      margin-top: -1rem;
+      display: inline;
+    }
+    .banner {
+      height: 120px;
+      .title {
+        height: 100px;
+        margin-top: -18rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  #featured-papers {
+    .banner {
+      height: 120px;
+      .title {
+        height: 100px;
+        margin-top: -13rem;
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 500px) {
   #featured-papers {
     .banner {
