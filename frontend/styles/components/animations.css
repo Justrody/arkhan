@@ -42,7 +42,7 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(48.5rem);
+        transform: translateX(39rem);
     }
 }
 @keyframes pop-in {

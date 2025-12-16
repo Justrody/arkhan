@@ -22,9 +22,9 @@
             <div class=" menu flex items-center justify-around gap-5">
                 <a class="nav-logo" href="landing.html">Arkhan</a>
                 <ol class="flex  gap-5 items-center justify-center">
-                    <li class="nav-btn"><a href="#about">About us </a></li>
+                    <li class="nav-btn mobile-hidden"><a href="#about">About us </a></li>
                     <li class="nav-btn"><button id="open-modal">Explore more</button></li>
-                    <li class="nav-btn"><a href="#footer">Socials</a></li>
+                    <li class="nav-btn mobile-hidden"><a href="#footer">Socials</a></li>
                 </ol>
                 <a class="nav-logo" href="#contact">Contact</a>
             </div>
@@ -33,7 +33,7 @@
     <section id="modal-nav" class="z-50 hidden fixed w-full items-center justify-center flex">
                 <ol class="flex flex-col gap-5 items-center justify-center">
                     <li class="nav-btn"><a href="/"><span>[</span>Articles<span>]</span></a></li>
-                    <li class="nav-btn"><a><span>[</span>Projetcs<span>]</span></a></li>
+                    <li class="nav-btn"><a href="#featured"><span>[</span>Projetcs<span>]</span></a></li>
                     <li class="nav-btn"><a href="#about"><span>[</span>About<span>]</span></a></li>
                 </ol>
     </section>
@@ -71,73 +71,181 @@
                     <p>saiba_mais_arkhanteam</p><p>saiba_mais_arkhanteam</p><p>saiba_mais_arkhanteam</p>
                 </div>
             </div>
-            <div class="rolling-right flex items-center gap-8 overflow-hidden">
-                <div class="card">
-                    <img src="assets/backgrounds/nextfur" alt="nextfur">
-                    <div>
+            <div class="rolling-right flex gap-8">
+                <article class="card">
+                    <img  src="assets/backgrounds/nextfur.webp"  alt="Identidade visual da NextFUR" loading="lazy">
+                    <div class="card-content">
                         <h2>NextFUR</h2>
-                        <p>A NextFUR � uma Funda��o, feita para apoiar, construir e transformar projetos da comunidade furry em realidade.</p>
+                        <p>
+                            A NextFUR é uma fundação criada para apoiar, construir e transformar
+                            projetos da comunidade furry em realidade.
+                        </p>
                     </div>
-                    <div><a href="https://nextfur.net/">NextFUR</a></div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div>
-                        <h2>title</h2>
-                        <p>project_desc</p>
+                    <div class="card-actions">
+                        <a href="https://nextfur.net/" target="_blank" rel="noopener noreferrer"  > Visitar site</a>
                     </div>
-                    <div><a href="">Source our website</a></div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div>
-                        <h2>title</h2>
-                        <p>project_desc</p>
+                </article>
+
+                <article class="card">
+                    <img src="assets/backgrounds/arkhan-archives.webp" alt="Identidade visual do Arkhan Archives" loading="lazy">
+                    <div class="card-content">
+                        <h2>Arkhan Archives</h2>
+                        <p>
+                            O Arkhan Archives reúne conteúdos e publicações dedicadas a segurança
+                            e pesquisa.
+                        </p>
                     </div>
-                    <div><a href="">Source our website</a></div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div>
-                        <h2>title</h2>
-                        <p>project_desc</p>
+                    <div class="card-actions">
+                        <a href="#">
+                            Acessar projeto
+                        </a>
                     </div>
-                    <div><a href="">Source our website</a></div>
-                </div>
+                </article>
+                <article class="card card--coming-soon">
+                    <img src="assets/backgrounds/placeholder.webp" alt="Projeto em breve" loading="lazy">
+                    <div class="card-content">
+                        <h2>Em breve</h2>
+                        <p>
+                            Um novo projeto está sendo preparado e será divulgado em breve.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="coming-soon">
+                            Em breve
+                        </span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img  src="assets/backgrounds/nextfur.webp"  alt="Identidade visual da NextFUR" loading="lazy">
+                    <div class="card-content">
+                        <h2>NextFUR</h2>
+                        <p>
+                            A NextFUR é uma fundação criada para apoiar, construir e transformar
+                            projetos da comunidade furry em realidade.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://nextfur.net/" target="_blank" rel="noopener noreferrer"  > Visitar site</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/backgrounds/arkhan-archives.webp" alt="Identidade visual do Arkhan Archives" loading="lazy">
+                    <div class="card-content">
+                        <h2>Arkhan Archives</h2>
+                        <p>
+                            O Arkhan Archives reúne conteúdos e publicações dedicadas a segurança
+                            e pesquisa.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#">
+                            Acessar projeto
+                        </a>
+                    </div>
+                </article>
+                <article class="card card--coming-soon">
+                    <img src="assets/backgrounds/placeholder.webp" alt="Projeto em breve" loading="lazy">
+                    <div class="card-content">
+                        <h2>Em breve</h2>
+                        <p>
+                            Um novo projeto está sendo preparado e será divulgado em breve.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="coming-soon">
+                            Em breve
+                        </span>
+                    </div>
+                </article>
             </div>
-            <div class=" rolling-left flex items-center gap-8 overflow-hidden">
-                <div class="card">
-                    <img src="" alt="">
-                    <div>
-                        <h2>title</h2>
-                        <p>project_desc</p>
+            <div class=" rolling-left flex gap-8">
+                <article class="card">
+                    <img  src="assets/backgrounds/nextfur.webp"  alt="Identidade visual da NextFUR" loading="lazy">
+                    <div class="card-content">
+                        <h2>NextFUR</h2>
+                        <p>
+                            A NextFUR é uma fundação criada para apoiar, construir e transformar
+                            projetos da comunidade furry em realidade.
+                        </p>
                     </div>
-                    <div><a href="">Source our website</a></div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div>
-                        <h2>title</h2>
-                        <p>project_desc</p>
+                    <div class="card-actions">
+                        <a href="https://nextfur.net/" target="_blank" rel="noopener noreferrer"  > Visitar site</a>
                     </div>
-                    <div><a href="">Source our website</a></div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div>
-                        <h2>title</h2>
-                        <p>project_desc</p>
+                </article>
+
+                <article class="card">
+                    <img src="assets/backgrounds/arkhan-archives.webp" alt="Identidade visual do Arkhan Archives" loading="lazy">
+                    <div class="card-content">
+                        <h2>Arkhan Archives</h2>
+                        <p>
+                            O Arkhan Archives reúne conteúdos e publicações dedicadas a segurança
+                            e pesquisa.
+                        </p>
                     </div>
-                    <div><a href="">Source our website</a></div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div>
-                        <h2>title</h2>
-                        <p>project_desc</p>
+                    <div class="card-actions">
+                        <a href="#">
+                            Acessar projeto
+                        </a>
                     </div>
-                    <div><a href="">Source our website</a></div>
-                </div>
+                </article>
+                <article class="card card--coming-soon">
+                    <img src="assets/backgrounds/placeholder.webp" alt="Projeto em breve" loading="lazy">
+                    <div class="card-content">
+                        <h2>Em breve</h2>
+                        <p>
+                            Um novo projeto está sendo preparado e será divulgado em breve.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="coming-soon">
+                            Em breve
+                        </span>
+                    </div>
+                </article>
+                <article class="card">
+                    <img  src="assets/backgrounds/nextfur.webp"  alt="Identidade visual da NextFUR" loading="lazy">
+                    <div class="card-content">
+                        <h2>NextFUR</h2>
+                        <p>
+                            A NextFUR é uma fundação criada para apoiar, construir e transformar
+                            projetos da comunidade furry em realidade.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://nextfur.net/" target="_blank" rel="noopener noreferrer"  > Visitar site</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/backgrounds/arkhan-archives.webp" alt="Identidade visual do Arkhan Archives" loading="lazy">
+                    <div class="card-content">
+                        <h2>Arkhan Archives</h2>
+                        <p>
+                            O Arkhan Archives reúne conteúdos e publicações dedicadas a segurança
+                            e pesquisa.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#">
+                            Acessar projeto
+                        </a>
+                    </div>
+                </article>
+                <article class="card card--coming-soon">
+                    <img src="assets/backgrounds/placeholder.webp" alt="Projeto em breve" loading="lazy">
+                    <div class="card-content">
+                        <h2>Em breve</h2>
+                        <p>
+                            Um novo projeto está sendo preparado e será divulgado em breve.
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <span class="coming-soon">
+                            Em breve
+                        </span>
+                    </div>
+                </article>
             </div>
         </section>
         <section id="about" class="w-full flex flex-col items-center justify-center">
@@ -155,66 +263,63 @@
             </div>
         </section>
     </main>
-    <footer class="text-center overflow-hidden">
-        <h1 class="banner-contact no-select z-25">contact</h1>
-        <div class="content flex-wrap flex items-center justify-center">
-            <section id="contact" class="useful-links z-20 relative flex flex-wrap flex-col items-center justify-center">
-                <div class="contact no-select gap-5 flex flex-wrap w-full justify-center mt-24">
-                    <form action="#" method="post" class="flex flex-col gap-4   " aria-label="Formulário de contato" novalidate>
-                        <fieldset>
-                            <label for="footer-email" class="sr-only">Email</label>
-                            <input id="footer-email" name="email" type="email" placeholder="seu@exemplo.com" required class="input" />
-                        </fieldset>
-                        <fieldset>
-                            <label for="footer-topic" class="sr-only">Assunto</label>
-                            <select id="footer-topic" name="topic" class="input" required>
-                                <option value="">Selecione um assunto</option>
-                                <option value="partnership">Parceria</option>
-                                <option value="opportunity">Oportunidade</option>
-                                <option value="other">Outro</option>
-                            </select>
-                        </fieldset>
-                        <fieldset>
-                            <label for="footer-message" class="sr-only">Mensagem</label>
-                            <textarea id="footer-message" name="message" rows="4" placeholder="Escreva sua mensagem..." required class="input"></textarea>
-                        </fieldset>
-                        <button type="submit" class="btn-primary">Enviar</button>
-                    </form>
-                    <div class=" text-center no-select content-links">
-                        <h2>Education</h2>
-                        <ol class="flex flex-col gap-2">
-                            <li><a href="#papers">Papers</a></li>
-                            <li><a href="#partners">Tutorials</a></li>
-                        </ol>
-                    </div>
-                    <div class=" text-center no-select content-links">
-                        <h2>Socials</h2>
-                        <ol class="flex flex-col gap-2">
-                            <li><a href="#papers">Instagram</a></li>
-                            <li><a href="#partners">X/Twitter</a></li>
-                            <li><a href="#contribute">Github</a></li>
-                        </ol>
-                    </div>
-                    <div class=" text-center no-select content-links">
-                        <h2>Support</h2>
-                        <ol class="flex flex-col gap-2">
-                            <li><a href="#papers">Discord</a></li>
-                            <li><a href="#contribute">Cotribute</a></li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="separator"></div>
-                <div class="credits text-center md:text-right no-select">
-                    <address class="not-italic mt-2">
-                        <a href="mailto:contact@arkhan.team">all rights reserved @arkhan 2026 - contact@arkhan.dominio</a>
-                    </address>
-                </div>
-            </section>
-        </div>          
-    </footer>
+<footer class="footer text-center relative">
+    <h1 class="banner-contact  no-select z-10">contact</h1>
+    <section id="contact" class="footer-container relative z-20 content" >
+        <div class="flex flex-wrap w-full mobile-col justify-center">
+            <div class="lg:col-span-2">
+                <form action="#" method="post" class="flex flex-col gap-4" aria-label="Formulário de contato"   novalidate >
+                    <input  id="footer-email" name="email"   type="email" placeholder="seu@exemplo.com" required  class="input"/>
+                    <select   id="footer-topic" name="topic" class="input" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="partnership">Parceria</option>
+                        <option value="opportunity">Oportunidade</option>
+                        <option value="other">Outro</option>
+                    </select>
+                    <textarea id="footer-message" name="message" rows="4" placeholder="Escreva sua mensagem..." required class="input resize-none" ></textarea>
+
+                    <button type="submit" class="btn-primary self-start"> Enviar</button>
+                </form>
+            </div>
+
+            <nav class="content-links">
+                <h2>Education</h2>
+                <ul class="flex flex-col gap-2">
+                    <li><a href="#papers">Papers</a></li>
+                    <li><a href="#partners">Tutorials</a></li>
+                </ul>
+            </nav>
+
+            <nav class="content-links">
+                <h2>Socials</h2>
+                <ul class="flex flex-col gap-2">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">X / Twitter</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </nav>
+
+            <nav class="content-links">
+                <h2>Support</h2>
+                <ul class="flex flex-col gap-2">
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Contribute</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="credits flex flex-wrap justify-center" >
+            <address class="not-italic">
+                <a href="mailto:contact@arkhan.team">
+                    © Arkhan 2026 — contact@arkhan.dominio
+                </a>
+            </address>
+        </div>
+    </section>
+</footer>
+
     <script src="/static/scripts/ui/navbarModal.js">
 
     </script>
-    <script src="/static/scripts/scroll/scroll.js"></script>
+    <script src="/static/scripts/features/scroll.js"></script>
 </body>
 </html>F
