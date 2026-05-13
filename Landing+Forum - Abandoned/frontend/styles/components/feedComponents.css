@@ -1,0 +1,76 @@
+#editor-view {
+  padding: 1rem;
+  background-color: var(--background-glass-2);
+  color: var(--text-primary);
+  fieldset {
+    border: 1px solid var(--material-gray);
+  }
+  a{
+      transition: .2s;
+      background-color: var(--material-red);
+      display: flex;
+      gap: 1rem;
+      padding: .5rem 2rem;
+      border-bottom: 3px solid var(--material-red-2);
+      color: var(--text-primary);
+  }
+  textarea {
+    padding: 1rem;
+      background-color: var(--material-gray-2);
+      border: 2px solid var(--material-gray);
+  }
+  .post-content {
+    width: 800px;
+    height: 500px;
+  }
+    input {
+      font-size: var(--font-small);
+      padding: .5rem 1rem;
+      background-color: var(--material-gray-2);
+      border: 2px solid var(--material-gray);
+    }
+    button {
+      transition: .2s;
+      background-color: var(--material-red);
+      display: flex;
+      gap: 1rem;
+      padding: .5rem 2rem;
+      border-bottom: 3px solid var(--material-red-2);
+      color: var(--text-primary);
+    }
+}
+
+
+#profile-header {
+    background: var(--background-main);
+    border: 1px solid var(--material-gray-2);
+    padding: .5rem 1rem;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-info h1 {
+    font-size: var(--font-default);
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-username {
+    color: var(--material-red);
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--void-border);
+}
